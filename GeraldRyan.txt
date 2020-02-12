@@ -1,0 +1,153 @@
+Completed codepen assignment: https://codepen.io/webbuildermn/pen/vYONEYY
+
+
+
+<!-- reveiw questions to Submit in today's file first-lastname.txt -->
+
+Copy the questions below into the firt-lastname.txt file on your github repo - answer each question and then push your changes.
+
+    1. What is Semantic HTML?
+        Semantic HTML is HTML that utilizes appropriate elements to convey meaning, that can be interpreted more easily by machines, for purposes of SEO and accessibility, as well as more easily understood by coders. An example includes using the <header> element instead of <div> or using pretty much anything more specific in place of <div> when possible, though <div>s still have their place and their use. 
+    
+    2. What is HTML used for?
+        HTML is used for building websites. All a site needs to display is HTML. It is the skeletal structure on which CSS (the styling) and JS (the actions) rest. 
+    
+    3. What is an attribute and where do we put it?
+        Attributes are (optional) bits of information or classifications about html elements, that take the form of a key:value pair. For example, anytime we give a specific element a class or an id, that becomes one of it's attributes, which we can use for referencing it. 
+    
+    4. What is the h1 tag used for? How many times should I use it on a page?
+        The H1 tag is the highest priority (so generally largest and most important) heading on a page. Ideally it should probably be used only once per page. 
+    
+    5. Name two tags that have required attributes
+	    <input> and <select>
+
+    6. What do we put in the head of our HTML document?
+        metadata about the site which doesn't display on the page. For instance a link to a CSS stylesheet. 
+    
+    7. What is an id?
+        An id is an attribute of an element that is unique and one of a kind per page, so that specific element can be referenced in CSS (or JS).
+    
+    8. What elements can I add an id to?
+        Any element
+    
+    9. How many times can I use the same id on a page?
+	    Just once
+
+    10. What is a class?
+    	A class is a custom made category that you can give to any number of elements, to call and reference them in CSS.
+    
+    11. What elements can I add a class to?
+    	All elements
+    
+    12. How many times can I use the same class on a page?
+   		As many times as you like until you run out of elements. 
+    
+    13. How do I get my link to open in a new tab?
+         Add target="_blank" to your anchor tag <a> as a new attribute
+    
+    14. What is the alt attribute used for?
+         displaying alternative text when the image can't be displayed for whatever reason
+    
+    15. How do I reference an id?
+         #id {} - hash tag and the name of your id
+    
+    16. What is the difference between a section and a div
+         A div is a generic container that you can use for styling and organizing. A section does the same but has more semantic meaning- in other words, it tells the reader that a new section of content is coming. 
+    
+    17. What is CSS used for?
+    	 Expressing yourself. (Styling webpages). 
+    
+    18. How to we select an element? Example - every h2 on the page
+         just type the element, of course followed by the curly braces. E.g. p { }
+    
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+		A class can be given to multiple elements, an id only one. Use a class when you ahve to style multiple elements the same- e.g. certian types of sections. An id is where you want to style one particular element- for example one particular section. 
+
+    20. How do we select classes in CSS?
+		.className {}
+
+    21. How do we select a p element with a single class of “human””?
+    	 .human p {}
+
+    22. What is a parent child selector? When would this be useful?
+		 select the parent and then the child of the element. E.g. div h2 {} will select the <h2>s that are children of divs. It's useful because it provides a means of accessing a certain group of elements. For example you want to style all the paragraph elements of a section.     
+	
+    23. How do you select all links within a div with the class of sidebar?
+	     .sidebar a {}
+
+    24. What is a pseudo selector?
+	      An example is item:hover {}. It is a special case of selectors that select elements conditionally, for example when a mouse icon is hovering over the element.
+
+    25. What do we use the change the spacing between lines?
+		There might be multiple ways but line-height:1.5 or whatever amount you want. 
+		
+    26. What do we use to change the spacing between letters?	
+          letter-spacing: 2px;
+		
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    	  text-transform property e.g.  text-transform: uppercase/lowercase/capitalize;
+
+    28. How do I add a 1px border around my div that is dotted and black?
+    	 border-style: dotted;
+  	     border-width: 1px;
+	     border-color: black;
+
+    29. How do I select everything on the page?
+    	  * {}
+    30. How do I write a comment in CSS?
+    	  control / just kidding, it's  //
+    31. How do I find out what file I am in, when I am using the command line?
+          pwd tells you your current working directory
+
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+	     ls, sometimes dir 
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this?
+     	 rm - it is irreversable and permanent
+
+    34. Why should I use version control?
+         multiple reasons- save backups of your code so you can rollback if discovering bugs, etc. Good to save and manage history. Great for working in teams. 
+    
+    35. How often should I commit to github?
+    	 After significant changes. 20 minutes was thrown out as a rule. 
+    
+    36. What is the command we would use to push our repo up to github?
+          git push -u origin firstname-lastname
+    
+    37. Walk me through Lambda's git flow.
+		1. fork on github
+		2. verify you're in your own
+		3. add lead as collaborator in github
+		4. clone on your pc
+		5. cd to your repo
+		6. (create and) checkout new branch with cmd: git checkout -b 'firstname-lastname'
+		7. work on repo and commit as needed. 
+		8. push up to GH
+		9. submit Pull request comparing your branch with your master. 
+		10. Add lead as reviewer and submit request. 
+		11. Do not merge your own!!
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+    	A block always starts on new line and takes up full width of parent (stretching as needed) 
+	    Inline does not start a new line and takes up only as much as needed
+    
+    2. What happens when an element is positioned absolutely?
+    	it is positioned relative to its nearest positioned ancestor (document body if none), instead of relative to viewport 
+    
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width?
+    	margin:auto
+	    width:Xpx;
+
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+	    block defaults: div, section, footer
+	    inline default span and <a>
+    
+    5. In your own words, explain the box model. What is the fix for the box model?
+
+    	the box model describes ways to organize content. It's better understood visually but there are four layers. The innermost aspect is content, where your content goes. Then this content can have a border, or not have one, but regardless, that's the 3rd innermost. Between these two is padding- think of the item you're getting from amazon- you want there to be lots of padding if the item is valuable and fragile. Then the outermost element is margin- or how far away your box is from other boxes on their deliver truck or plane- i.e. the other elements in the html. 
+
+        The problem is it is not dynamic enough, for different devices and viewports, among other things, so the fix is frameworks like flexbox that we will be learning. 
+
+   -->
